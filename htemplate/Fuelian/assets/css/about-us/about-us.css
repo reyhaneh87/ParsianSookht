@@ -1,0 +1,9 @@
+.bg-about-us{
+    background-image: url(../../../assets/image/about/naze-group.jpg);
+    background-color: rgb(74, 74, 74);
+    background-repeat: no-repeat;
+    background-position: center -30px;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+  }

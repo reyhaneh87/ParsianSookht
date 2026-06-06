@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@layer base {
+  .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  .button:focus{
+    outline: 0;
+  }
+  .input{
+    font-size: 14px;
+    padding: 12px;
+    border-width: 2px;
+    border-left-color:var(--theme-Slogan);
+    border-top-color: var(--theme-Slogan);
+    border-radius: 30px;
+    width: 100%;
+}
+.input:focus{
+    outline-color: var(--theme-Slogan);
+}
+}
+@theme {
+  --font-mypinar: "myPinar", sans-serif;
+  --color-theme-primary: var(--theme-primary);
+  --color-theme-Slogan:var(--theme-Slogan);
+  --color-menu:var(--theme-menu);
+  --shadow-primary :0 0 10px 3px rgb(225, 225, 225);
+  --shadow-about:0 0 15px 2px #dbdbdb;
+  --text-smaller:12px;
+  --text-xler:22px;
+}
+:root {
+  --theme-primary: rgb(217, 0, 0);
+  --theme-Slogan:rgb(164, 0, 0);
+  --theme-menu:rgba(156, 20, 20, 0.3);
+}
+
+@utility container {
+  padding-inline: 0.90rem;
+  margin-inline: auto;
+}

@@ -1,0 +1,31 @@
+.card-gallery::before,
+.card-gallery::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  border: 3px solid var(--color-theme-primary);
+  transition: transform 0.5s ease;
+  transform: scale(0);
+}
+
+.card-gallery::before {
+  top: -6px;
+  right: -6px;
+  border-left: none;
+  border-bottom: none;
+  transform-origin: top right;
+}
+
+.card-gallery::after {
+  bottom: -6px;
+  left: -6px;
+  border-top: none;
+  border-right: none;
+  transform-origin: bottom left;
+}
+
+.card-gallery:hover::before,
+.card-gallery:hover::after {
+  transform: scale(3);
+}
